@@ -1,0 +1,15 @@
+.button{
+    background-color: transparent;
+    width: 25%;
+    height: 2.5rem;
+    color: var(--gray-300);
+    border-radius: 20px;
+    padding: 8px;
+    border: solid 2px var(--gray-300);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover{
+    background-color: var(--gray-300);
+    color: rgb(0, 0, 0);
+}

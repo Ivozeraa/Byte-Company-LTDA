@@ -1,0 +1,45 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gray-700);
+    padding: 0 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    font-family: 'orbitron', sans-serif;
+    img{
+        height: 7rem;
+    }
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+}
+
+.li{
+    padding: 1rem;
+}
+
+.whatsappIcon {
+    color: #25D366; /* Cor do WhatsApp */
+  }
+  
+  .instagramIcon {
+    color: #E4405F; /* Cor do Instagram */
+  }
+  
+  .githubIcon {
+    color: #333; /* Cor do GitHub */
+  }
+  

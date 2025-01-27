@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+  
+  .ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .li {
+    list-style: none;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--gray-200);
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .li:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.2s;
+  }
