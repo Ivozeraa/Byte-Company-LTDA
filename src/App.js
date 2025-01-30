@@ -1,5 +1,8 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer"
+import { Product } from "./components/Product";
+
+import magicPen from "./assets/magicPen.png"
 
 import { Button } from "./components/Button"
 
@@ -20,14 +23,36 @@ export function App() {
             backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.16)), url(${Banner1})`,
           }}
         >
-          <strong className={S.titleContent}>
+          <strong>
             Innovation that turns ideas into solutions
           </strong>
 
-          <p className={S.pContent}>
+          <p>
           At Byte Company, we focus on creating innovative hardware solutions that blend technology and functionality. Our goal is to transform ideas into efficient, affordable products that improve people's lives. By approaching challenges practically, we aim to deliver solutions that are both accessible and impactful, always exploring new possibilities for the future.          </p>
 
           <Button buttonContent="Learn More" targetClass="Footer"/>
+
+        </article>
+
+        <article className={S.content2} id="projects">
+          <strong style={{fontSize: '2rem'}}>Projects</strong>
+          <Product 
+            imgProduct={magicPen}
+            strongProduct="Magic Pen"
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."/>
+    
+          <Product 
+            imgProduct={magicPen}
+            strongProduct="Magic Pen"
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."/>
+
+          <Product 
+            imgProduct={magicPen}
+            strongProduct="Magic Pen"
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."/>
+        </article>
+
+        <article className={S.content3} id="about">
 
         </article>
       </main>

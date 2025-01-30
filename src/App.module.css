@@ -6,15 +6,29 @@
     padding: 10rem 5rem;
   }
 
-  .titleContent {
+  .content strong {
     font-size: 2rem;
   }
   
-  .pContent{
-    margin: 2rem;
+  .content p{
     width: 50%;
     border-radius: 8px;
     padding: 0.875rem;
     
   }
   
+  .content2 {
+    background: linear-gradient(45deg, var(--gray-500), var(--gray-600));
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+.content2 strong{
+  font-size: 2rem;
+}
+
+

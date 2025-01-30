@@ -26,10 +26,10 @@ export function Nav() {
     <nav className={S.nav}>
       <ul className={S.ul}>
         <li className={S.li}>
-          <a className={S.a} href="#">Projects</a>
+          <a className={S.a} href="#projects">Projects</a>
         </li>
         <li className={S.li}>
-          <a className={S.a} href="#">About</a>
+          <a className={S.a} href="#about">About</a>
         </li>
         <li className={S.li}>
           <a className={S.a} href="#footer">Contacts</a>

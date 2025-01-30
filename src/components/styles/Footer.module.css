@@ -1,9 +1,26 @@
 .footer{
+    background: var(--gray-700);
+    display: flex;
+    flex-direction: column;
+}
+
+.part1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--gray-700);
     padding: 0 2rem;
+}
+
+.part2{
+    display: flex;
+    justify-content: center;
+    margin: 0 2.5rem;
+    padding: 1rem;
+    border-top: 2px solid var(--purple-200);
+    color: var(--gray-200);
+    p{
+        font-size: 1rem;
+    }
 }
 
 .container{
@@ -24,6 +41,7 @@
 
 .ul{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -42,4 +60,28 @@
   .githubIcon {
     color: #333; /* Cor do GitHub */
   }
+
+  .arrowUpIcon{
+    color: var(--gray-100);
+    font-size: 2rem;
+    padding: 5px;
+    background-color: var(--gray-500);
+    border-radius: 20px;
+  }
+
+.whatsappIcon,
+.instagramIcon,
+.githubIcon,
+.arrowUpIcon{
+    transition: scale 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsappIcon:hover, 
+.instagramIcon:hover, 
+.githubIcon:hover, 
+.arrowUpIcon:hover {
+    scale: 1.2;
+    color: white;
+    cursor: pointer;
+}
   
