@@ -50,36 +50,54 @@
 }
 
 .whatsappIcon {
-    color: #25D366; /* Cor do WhatsApp */
+    color: #25D366; 
   }
   
   .instagramIcon {
-    color: #E4405F; /* Cor do Instagram */
+    color: #E4405F; 
   }
   
   .githubIcon {
-    color: #333; /* Cor do GitHub */
+    color: #333; 
   }
 
   .arrowUpIcon{
-    color: var(--gray-100);
+    color: var(--gray-500);
     font-size: 2rem;
     padding: 5px;
-    background-color: var(--gray-500);
-    border-radius: 20px;
+    border-radius: 7px;
+    background-color: var(--gray-100);
+    position: relative;
+    bottom: 3.5rem; 
+    margin: 0 auto;
+    display: block;
+    z-index: 1000;
+    width: 50px;
+
+    transition: scale 0.2s ease, 
+                background-color 0.2s ease;
+  }
+
+  .arrowUpIcon:hover{
+    color: var(--gray-500);
+    scale: 1.2;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+    background-color: white;
+
   }
 
 .whatsappIcon,
 .instagramIcon,
-.githubIcon,
-.arrowUpIcon{
-    transition: scale 0.2s ease, background-color 0.2s ease;
+.githubIcon{
+    transition: scale 0.2s ease, 
+                background-color 0.2s ease;
+    font-size: 1.25rem;
 }
 
 .whatsappIcon:hover, 
 .instagramIcon:hover, 
-.githubIcon:hover, 
-.arrowUpIcon:hover {
+.githubIcon:hover {
     scale: 1.2;
     color: white;
     cursor: pointer;

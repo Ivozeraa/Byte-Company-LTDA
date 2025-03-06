@@ -1,6 +1,6 @@
 .project{
     display: flex;
-    width: 48rem;
+    width: 85%;
     background-color: var(--gray-600);
     padding: 10px;
     border-radius: 8px;

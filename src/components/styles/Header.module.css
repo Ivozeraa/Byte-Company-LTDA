@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     height: 7rem;
-    font-family: "orbitron";
+    font-family: "orbitron", sans-serif;
 }
 
 .header img{

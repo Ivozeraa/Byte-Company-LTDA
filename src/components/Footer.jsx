@@ -39,7 +39,7 @@ export function Footer() {
             <div className={S.container}>
                 <ul className={S.ul}>
                     <li className={S.li}><FaWhatsapp className={S.whatsappIcon} /></li>
-                    <li className={S.li}><a href="#"><FaInstagram className={S.instagramIcon} /></a></li>
+                    <li className={S.li}><a href="https://www.instagram.com/byte_startup/"><FaInstagram className={S.instagramIcon} /></a></li>
                     <li className={S.li}><a href="https://github.com/Erik3331/Byte-Company-LTDA"><FaGithub className={S.githubIcon} /></a></li>
                     <li className={S.li}><a href="#header"><FaArrowUp className={S.arrowUpIcon} /></a></li>
                 </ul>
