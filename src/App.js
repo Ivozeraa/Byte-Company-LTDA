@@ -40,7 +40,20 @@ export function App() {
           <Product 
             imgProduct={magicPen}
             strongProduct="Magic Pen"
-            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."/>
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."
+          />
+
+<Product 
+            imgProduct={magicPen}
+            strongProduct="Magic Pen"
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."
+          />
+
+<Product 
+            imgProduct={magicPen}
+            strongProduct="Magic Pen"
+            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."
+          />
     
         </article>
 
