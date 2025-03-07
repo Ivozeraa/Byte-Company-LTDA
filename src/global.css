@@ -10,11 +10,7 @@
     --purple-100: #a97cdd;
     --purple-200: #6b2fa0;
   
-    --font-primary: "Inter", serif;
     --text-color: #ffffff;
-    --background-color: var(--gray-500);
-    --font-size-base: 1rem;
-    --font-size-large: 1.25rem;
   }
   
   * {
@@ -24,15 +20,11 @@
   }
   
   body {
-    background: var(--background-color);
-    color: var(--text-color);
-    font-family: var(--font-primary);
-    font-size: var(--font-size-base);
+    color: whitesmoke;
+    font-family: "Inter", sans-serif;
     line-height: 1.5;
-
   }
   
   p, strong {
-    font-size: var(--font-size-large);
     line-height: 1.6;
   }

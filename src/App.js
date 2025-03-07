@@ -36,7 +36,7 @@ export function App() {
         </article>
 
         <article className={S.content2} id="projects">
-          <strong style={{fontSize: '2rem'}}>Projects</strong>
+          <strong style={{fontSize: '2.25rem'}}>Projects</strong>
           <Product 
             imgProduct={magicPen}
             strongProduct="Magic Pen"
