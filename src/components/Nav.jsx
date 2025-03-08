@@ -1,8 +1,9 @@
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
 import S from "./styles/Nav.module.css";
 
 export function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     const links = document.querySelectorAll('a[href^="#"]');
 
@@ -18,21 +19,38 @@ export function Nav() {
             behavior: "smooth",
           });
         }
+
+        setIsMenuOpen(false);
       });
     });
   }, []);
 
   return (
     <nav className={S.nav}>
-      <ul className={S.ul}>
+      <button
+        className={`${S.hamburger} ${isMenuOpen ? S.active : ""}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <div className={S.line}></div>
+        <div className={S.line}></div>
+        <div className={S.line}></div>
+      </button>
+
+      <ul className={`${S.ul} ${isMenuOpen ? S.active : ""}`}>
         <li className={S.li}>
-          <a className={S.a} href="#projects">Projects</a>
+          <a className={S.a} href="#projects">
+            Projects
+          </a>
         </li>
         <li className={S.li}>
-          <a className={S.a} href="#about">About</a>
+          <a className={S.a} href="#about">
+            About
+          </a>
         </li>
         <li className={S.li}>
-          <a className={S.a} href="#footer">Contacts</a>
+          <a className={S.a} href="#footer">
+            Contacts
+          </a>
         </li>
       </ul>
     </nav>
