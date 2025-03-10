@@ -14,3 +14,10 @@
     background-color: var(--gray-300);
     color: rgb(0, 0, 0);
 }
+
+@media (max-width: 768px){
+    .button{
+        width: 40%;
+
+    }
+}
