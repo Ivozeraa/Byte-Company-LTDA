@@ -3,11 +3,14 @@ import { Footer } from "./components/Footer"
 import { Product } from "./components/Product";
 
 import magicPen from "./assets/magicPen.png"
+import Healthbyte from "./assets/Healtbyte.webp"
 
 import { Button } from "./components/Button"
 
 import Banner1 from "./assets/content1.jfif";
 import Banner2 from "./assets/content3.jpg";
+
+
 
 import S from "./App.module.css";
 
@@ -36,12 +39,21 @@ export function App() {
         </article>
 
         <article className={S.content2} id="projects">
-          <strong style={{fontSize: '2rem'}}>Projects</strong>
+          <strong style={{fontSize: '2.25rem'}}>Projects</strong>
           <Product 
             imgProduct={magicPen}
             strongProduct="Magic Pen"
-            pProduct="The Magic Pen is an innovative pen made from a repurposed mouse. Its ergonomic design maintains the mouse's original comfort, while the click activates the retractable tip. Ideal for those looking for creativity, sustainability and technology in a single product."/>
-    
+            pProduct="Pen made from a repurposed mouse. "
+          />
+
+          <Product
+              imgProduct={Healthbyte}
+              strongProduct="Health Byte"
+              pProduct="Wearable device that monitors vital signs in real time."
+              url="https://bytehealth.vercel.app"
+          />
+
+
         </article>
 
         <article 

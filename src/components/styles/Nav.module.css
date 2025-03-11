@@ -1,40 +1,87 @@
+/* Estilos gerais */
 .nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
-  
-  .ul {
+
+.ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li {
+  padding: 0.5rem;
+  padding-bottom: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--gray-300);
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.li:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+/* Estilos do menu hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    margin: 0;
-    padding: 0;
   }
-  
-  .li {
-    list-style: none;
-    padding: 0.5rem;
-    padding-bottom: 0;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .li::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-    width: 0;
-    height: 2px;
-    background-color: var(--gray-300);
-    transition: width 0.3s ease, right 0.3s ease;
-  }
-  
-  .li:hover::after {
+
+  .ul {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    right: 0;
+    background-color: var(--gray-100);
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
-  
-  .a {
-    text-decoration: none;
-    color: var(--text-color);
-    transition: color 0.2s;
+
+  .ul.active {
+    display: flex;
   }
+
+  .li {
+    text-align: center;
+    padding: 1rem;
+  }
+}

@@ -1,37 +1,36 @@
 .content {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    padding: 10rem 5rem;
-  }
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  padding: 12vw 5rem;
+}
 
-  .content strong {
-    font-size: 2rem;
-  }
-  
-  .content p{
-    width: 50%;
-    border-radius: 8px;
-    padding: 0.875rem;
-    
-  }
-  
-  .content2 {
-    background: linear-gradient(45deg, var(--gray-600), var(--gray-400), var(--gray-600));
-    width: 100%;
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-.content2 strong{
+.content strong {
   font-size: 2rem;
 }
 
-.content3{
+.content p {
+  width: 50%;
+  padding: 0.875rem;
+  font-size: 1.5rem;
+}
+
+.content2 {
+  background: linear-gradient(45deg, var(--gray-600), var(--gray-400), var(--gray-600));
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content2 strong {
+  font-size: 2rem;
+}
+
+.content3 {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -39,6 +38,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
+@media(max-width: 768px){
+  .content {
+    height: 100vh;
+    width: 100%;
+    padding: 12rem 1rem;
+  }
+  
+  .content strong {
+    font-size: 1.2rem;
+  }
+  
+  .content p {
+    width: 75%;
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .content2{
+    padding: 1rem;
+  }
+}
