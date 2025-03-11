@@ -1,5 +1,4 @@
 import S from "./styles/Product.module.css";
-import { Button } from "./Button"; // Ensure this is used if needed
 
 export function Product({ imgProduct, strongProduct, pProduct, url }) {
     return (
